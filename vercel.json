@@ -1,7 +1,7 @@
 {
   "routes": [
-    { "src": "/(?!api)(.*)", "status": 404 },
+    { "src": "^(?!/api).*$", "status": 404 },
     { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404 }
+    { "src": "/.*", "status": 404 }
   ]
 }
