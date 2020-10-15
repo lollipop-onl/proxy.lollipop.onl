@@ -1,6 +1,6 @@
 {
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/api/404.ts" }
+    { "src": "/(.*)", "status": 404, "dest": "/resources/404.json" }
   ]
 }
