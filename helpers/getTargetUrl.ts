@@ -10,6 +10,10 @@ export type TargetResult = string | ProxyErrorResponse;
 export const getTargetUrl = (requestQuery: NowRequestQuery): TargetResult => {
   const { proxyTarget } = requestQuery;
 
+  if (!proxyTarget) {
+    return getProxyErrorResponse('error.missingParameter', 'パラメータが不足しています。', { property: 'proxyTarget' });
+  }
+
   if (Array.isArray(proxyTarget) || !/^https?:\/\//.test(proxyTarget)) {
     return getProxyErrorResponse('error.invalidParameter', 'パラメータが不正です。', { property: 'proxyTarget' });
   }
