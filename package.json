@@ -2,10 +2,14 @@
   "name": "proxy.lollipop.onl",
   "version": "1.0.0",
   "devDependencies": {
+    "@types/http-proxy": "^1.17.4",
     "vercel": "^20.1.2"
   },
   "scripts": {
     "start": "vercel dev"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  }
 }
