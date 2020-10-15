@@ -1,7 +1,7 @@
 {
   "routes": [
-    { "src": "/(?!api)(.*)", "status": 404, "dest": "/resources/404.json" },
+    { "src": "/(?!api)(.*)", "status": 404 },
     { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/resources/404.json" }
+    { "src": "/(.*)", "status": 404 }
   ]
 }
