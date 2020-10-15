@@ -1,5 +1,5 @@
 {
-  "functions": {
-    "includeFiles": ["api/**"]
-  }
+  "routes": [
+    { "src": "/(.*)", "status": 404, "dest": "/404.json" }
+  ]
 }
