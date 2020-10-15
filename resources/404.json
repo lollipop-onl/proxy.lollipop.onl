@@ -1,4 +1,6 @@
 {
   "isProxyError": true,
-  "code": "error.notFound"
+  "code": "error.notFound",
+  "message": "ページが存在しません。",
+  "data": {}
 }
