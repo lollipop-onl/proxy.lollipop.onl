@@ -2,7 +2,10 @@
   "name": "proxy.lollipop.onl",
   "version": "1.0.0",
   "devDependencies": {
-    "@vercel/node": "^1.8.4"
+    "vercel": "^20.1.2"
+  },
+  "scripts": {
+    "start": "vercel dev"
   },
   "license": "MIT"
 }
